@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sentiment Analyzer</h1>
+        <p class="subtitle">Analyze the emotional tone of your text</p>
+
+        <textarea id="textInput"
+            placeholder="Enter your text here..."></textarea>
+
+        <button onclick="analyzeSentiment()">Analyze Sentiment</button>
+
+        <div class="result" id="result">
+            <div class="emoji" id="emoji">😊</div>
+            <h2 id="sentiment">Waiting for analysis</h2>
+            <p id="score">Enter text and click Analyze</p>
+        </div>
+
+        <div class="keywords">
+            <h3>Detected Words</h3>
+            <p id="detectedWords">-</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
